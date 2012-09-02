@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7" client="site" method="upgrade">
+	<name>Calculator Plus</name>
+	<author>Theo van der Sluijs</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>(C) 2011 Theo van der Sluijs / IamboredsoIblog.eu</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@IamboredsoIblog.eu</authorEmail>
+	<authorUrl>www.IamboredsoIblog.eu</authorUrl>
+	<version>1.7.0</version>
+	<description>Nice Extented little Calculator Module, with mem options</description>
+	<files>
+		<filename module="mod_calculator_plus">mod_calculator_plus.php</filename>
+		<filename>mod_calculator_plus.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>js/mod_calc.js</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/calc_style.css</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<languages>
+        <!-- Any language files included with the module -->
+        <language tag="en-GB">en-GB.mod_calculator_plus.ini</language>
+    </languages>		
+	<config>
+			<fields name="params">
+				<fieldset name="advanced">
+				<field name="Blink" type="list" default="0" label="Show Backlink" description="Show a backlink to IamBoredsoIblog.eu">
+					<option value="0">Yes</option> 
+					<option value="1">No</option> 
+				</field>	
+			</fieldset>
+		</fields>
+	</config>
+</extension>
